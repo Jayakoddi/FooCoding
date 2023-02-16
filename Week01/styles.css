@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: lightgrey;
+    color:darkslategrey;
+}
+
+@media (min-width: 340px) {
+    .main-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "photo"
+        "name"
+        "about"
+        "skills"
+        "education"
+        "work"
+        "contact"
+}
+}
+
+@media (min-width: 1200px) {
+    .main-content {
+      grid-template-areas:
+        "photo name"
+        "skills about"
+        "education work"
+        "contact contact";
+        border-radius: 20px 20px;
+        background-color: rgba(96, 207, 238, 0.879);
+    padding: 20px;
+        
+    }
+  }
+
+@media (min-width: 900px) {
+.main-content{
+    width:70%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-areas  :
+        "photo name name"
+        "skills about about"
+        "education work work"
+        "contact contact";
+    border-radius: 20px 20px;
+    background-color: rgba(96, 207, 238, 0.879);
+    padding: 20px;
+}
+}
+
+
+.name{
+    grid-area: name;
+    border-radius: 0px 20px 0px 0px;
+    background-color: rgba(179, 231, 246, 0.879);
+    padding: 10px 20px 0px 20px;
+}
+
+
+.photo{
+    grid-area:photo;
+    border-radius: 20px 0px 0px 0px;
+    background-color: rgba(179, 231, 246, 0.879);
+    padding: 10px 20px 0px 20px;
+}
+
+
+.about {
+    grid-area: about;
+   
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 0px 0px 30px;
+}
+.skills{
+    grid-area: skills;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 30px 0px 30px;
+}
+
+.education{
+    grid-area: education;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 30px 0px 30px;
+}
+
+.work{
+    grid-area: work;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 0px 0px 30px;
+}
+
+.contact {
+    grid-area: contact;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(179, 231, 246, 0.879);
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+  
+.myname{
+    padding:2rem;
+    text-transform:uppercase;
+    letter-spacing: 10px;
+    line-height: 200%;
+}
+.profileImage{
+    padding: 20px;
+    width:90%;
+    height:80%;
+    border-radius:50%;
+}
+.subheadings{
+text-transform:uppercase;
+letter-spacing: 6px;
+padding: 0.8rem 0;
+}
+.semibold{
+    font-size:1rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.highlightme { 
+    background-color:lightblue
+}
+.para-padding{
+    padding-bottom: 1rem;
+    line-height: 150%;
+}
+ul{
+    list-style-type: circle;
+    padding-left: 1rem;
+}
+.underline{
+    text-decoration: underline;
+}
+.footer{
+    line-height: 200%;
+    text-align: center;
+}
+
+
+
+
